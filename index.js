@@ -65,7 +65,10 @@ function init() {
         .then((answers) => {
             const readme = generateMarkdown(answers);
             console.log(readme);
-        })
+
+            fs.writeFile('README.md', readme, (err) =>
+            err ? console.log(err) : console.log('Successfully created README.md!')
+        )})
 }
 // Function call to initialize app
 init();
