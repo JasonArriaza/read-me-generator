@@ -46,6 +46,9 @@ function generateMarkdown(data) {
 
   ## Questions
   ${data.questions}
+  Check out my github!: (https://github.com/${data.github})
+  For any questions, contact me at:
+  ${data.email}
 `;
 }
 
